@@ -3,47 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - [Votre Nom]</title>
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>[Votre Nom]</h1>
-        <p>[Votre titre ou métier]</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>À propos</h2>
-            <p>[Texte de présentation]</p>
-        </section>
-        <section id="skills">
-            <h2>Compétences</h2>
-            <ul>
-                <li>[Compétence 1]</li>
-                <li>[Compétence 2]</li>
-                <li>[Compétence 3]</li>
+    <div class="container">
+        <div class="left">
+            <div class="photo">
+                <img src="image/photo.jpg" alt="Votre Photo" />
+                <h1>ADRAR LITICIA</h1>
+            </div>
+            <ul class="menu">
+                <li onclick="showSection('about')">À Propos</li>
+                <li onclick="showSection('education')">Formations Académiques</li>
+                <li onclick="showSection('certifications')">Formations Certifiées</li>
+                <li onclick="showSection('skills')">Compétences</li>
+                <li onclick="showSection('experience')">Expériences Professionnelles</li>
+                <li onclick="showSection('projects')">Projets Réalisés</li>
+                <li onclick="showSection('associative')">Expériences Associatives</li>
+                <li onclick="showSection('languages')">Langues</li>
+                <li onclick="showSection('Contacts')">Contacts</li>
+                <li onclick="showSection('interests')">Centres d'Intérêts</li>
             </ul>
-        </section>
-        <section id="experience">
-            <h2>Expérience</h2>
-            <p>[Détails de vos expériences]</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email : [Votre email]</p>
-            <p>LinkedIn : <a href="votre-lien-linkedin">Votre profil</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 [Votre Nom]</p>
-    </footer>
+        </div>
+        <div class="right">
+            <div id="about" class="section">
+                <h2>Bienvenue à mon site, Je suis <strong>Liticia ADRAR <div class="sticker">😊</div></strong></h2>
+                <UL>Née le 06/05/1998 à AOKAS W.Béjaia (Algérie)</UL>
+                <ul>Adresse: Béjaia -Alger </ul> 
+            
+                Voici un bref aperçu de mon parcours et de mes expériences. <div class="sticker">⬇️</div>
+                
+                <p>Titulaire d’un Master en Administration et Sécurité des Réseaux🎓,
+                     je suis passionnée par la cybersécurité et les réseaux informatiques🌐. <br>
+                     <br>
+                     Mes compétences sont solidifiées par des certifications reconnues, notamment HCIA
+                      Cloud Computing ☁️ et HCIA Security de Huawei, ainsi que des certifications CISCO,
+                       telles que Gestion des cybermenaces et Analyste Junior en Cybersécurité🔐. <br>
+                      <br>
+                    J’ai également acquis une expérience significative en intégration d’ERP et en cartographie 🗺️
+                     des systèmes d’information📱. Mon stage au sein de l’entreprise CEVITAL a marqué mes premiers 
+                     pas dans le domaine de la cybersécurité. Dans ce cadre, j’ai mené un projet innovant visant 
+                     à développer une solution de cartographie des parcs applicatifs à l’aide de technologies
+                      open-source. Ce projet répond aux défis liés à la complexité croissante des parcs 
+                      applicatifs modernes, en optimisant leur gestion, leur sécurité et leurs ressources, 
+                      tout en offrant une vision stratégique globale. <br>
+                    <br>
+                    Mon expérience dans l’enseignement supérieur m’a permis d’enrichir mes compétences 
+                    pédagogiques et de développer une meilleure capacité à partager mes connaissances 💡, 
+                    à affiner mes compétences en prise de parole en public et à devenir une personne résolument 
+                    orientée vers les solutions. <br>
+                    <br>
+                    Je souhaite intégrer un environnement dynamique où je pourrais mettre à profit mes 
+                    compétences tout en poursuivant mon développement professionnel dans le domaine de la 
+                    cybersécurité🤝.</p></p>
+            </div>
+            <div id="education" class="section">
+                <h2>Formations Académiques</h2>
+                <br>
+                <ul><li><strong>Master informatique</strong> 🎓 2020-2022</li><br>
+                     Option: Administration et sécurité des réseaux <br>
+                     Université Abdrahmane Mira Béjaia <br>
+                     <br>
+                     <li><strong>Licence en Informatique </strong>🎓  2017-2020</li><br>
+                    Option: Systémes Informatique <br>
+                    Université Abdrahmane Mira Béjaia <br>
+
+                    <br>
+                   <li><strong>Baccalaureat 2017</strong> 🎓</li><br>
+                   Série: Science Expérimenttal <br>
+                   Mention: Assez Bien <br>
+                    <br>
+
+                   <li> <strong>Baccalaureat 2016</strong>🎓</li>
+                   Série: Science Expérimenttal <br>
+                   Mention: Bien <br>
+                </ul>
+            </div>
+            <div id="certifications" class="section">
+                <h2>Formations Certifiées</h2>
+                <ul><li>Analyst Junior Cybersécurité</li> <br>
+                    délivré par: Cisco <br>
+                    <p> <u>Description:</u> </p>: La formation Analyste Junior en Cybersécurité m'a formé 
+                    à détecter, analyser et répondre aux menaces informatiques pour 
+                    protéger les systèmes d’information. Elle couvre les fondamentaux de la sécurité, 
+                    les outils d’analyse (SIEM, IDS/IPS), les bonnes pratiques de sécurisation des 
+                    réseaux et des données, ainsi que les bases des normes et réglementations
+                     (ISO 27001, RGPD). Grâce à une approche pratique et technique, j'ai acquise
+                     les compétences nécessaires pour gérer les incidents, renforcer la 
+                     sécurité des environnements numériques et contribuer à la gouvernance en 
+                     cybersécurité.
+                     
+                     
+            
+                      <p>Lien Badge et Certificat : <a href="https://www.credly.com/badges/aecb6f3e-57e6-42ac-8d0d-787cdbf91bb0/public_url"> Cliquez pour voir le badge</a> </p>
+                      
+                        <br>
+                    
+                    
+                    <li>Gestion des Cybermenaces</li> <br>
+                    délivré par: Cisco <br>
+                    <p> <u>Description:</u> </p>: La formation Gestion des Cybermenaces m'a permet d'acquérir 
+                    les compétences nécessaires pour détecter, analyser, et répondre efficacement
+                     aux cybermenaces dans un environnement réseau complexe.qui m'a permis de développer des compétences essentielles pour :
+                     - Détecter et analyser les menaces cyber <br>
+                     - Réagir efficacement face aux incidents de sécurité <br>
+                     - Mettre en place des stratégies de protection avancées <br>
+                     
+                      Cette reconnaissance me permet de renforcer ma capacité à anticiper et à gérer les défis du secteur avec une meilleure expertise et d'apporter des solutions plus efficaces pour sécuriser les systèmes d'information.
+                      <p>Lien Badge et Certificat : <a href="https://www.credly.com/badges/851b3f45-7f7e-49ba-b478-49b22e44544f/linked_in_profile">Badge et Certificat Cisco</a></p>    
+                     <br>
+                     <br>
+               
+                      <li>Cyber Sécurité Awarness</li><br>
+                délivré par: HP life <br>
+                <p> <u>Description:</u> </p>
+                La formation avait comme Objectif : Comprendre les enjeux actuels de la cybersécurité et la manière dont les cyberattaques peuvent affecter les entreprises.
+                <br>
+                - Savoir comment protéger les informations sensibles <br>
+                - Savoir comment sécuriser les appareils utilisés dans un environnement professionnel.
+                <div class="image-wrapper">
+                    <img src="image/hp.jpg" alt="Image encadrée" class="framed-image">
+                  </div>
+
+                  <br>
+
+                <li>Agile Project</li> <br>
+                délivré par : HP Life <br>
+                <p> <u>Description:</u> </p>: La formation Agile Project vise à sensibiliser à la gestion de projets selon la méthodologie Agile  <br>
+                à savou : <br> -Comprendre les principes fondamentaux de la méthode Agile <br>
+                - Savoir utiliser les outils et les techniques Agile pour planifier, exécuter et suivre les projets. <br>
+                - Apprendre à travailler efficacement en équipe, en favorisant la communication, la collaboration et l'autonomie.
+
+                <div class="image-wrapper">
+                    <img src="image/project.jpg" alt="Image encadrée" class="framed-image">
+                  </div>
+
+                  <br>
+                <li>Test de logiciel</li><br>
+                délivré par: Cursa <br>
+                <p> <u>Description:</u> </p> <br>
+                - Comprendre l'importance des tests dans le développement logiciel <br>
+                - Mettre en pratique les techniques de test <br>
+                - Intégrer les tests dans le processus de développement agile 
+                <div class="image-wrapper">
+                    <img src="image/test.jpg" alt="Image encadrée" class="framed-image">
+                  </div>
+                <br>
+                <br>
+
+                <li>HCIA Cloud Computing</li> <br>
+                délivré par: Huawei  <br>
+                <p> <u>Description:</u> </p>  <br>
+                - Gérer l'infrastructure cloud <br>
+                - Sécuriser les environnements cloud <br>
+                - Mettre en œuvre des solutions cloud à grande échelle 
+                <div class="image-wrapper">
+                    <img src="image/HCIA.jpg" alt="Image encadrée" class="framed-image">
+                  </div>
+                     <br>
+                     <br>
+                  
+                <li>Création de site web </li> <br>
+                délivré par: ESGI  <br>
+                <p> <u>Description:</u> </p>
+                - Acquérir des compétences en développement web <br>
+                - Utiliser des CMS et des frameworks <br>
+                - Déployer et maintenir des sites web 
+                <li>Développeur Java</li> <br>
+                délivré par: Amis de Java <br>
+                <p> <u>Description:</u> </p>
+                - Maîtriser les bases du langage Java <br>
+                - Développer des applications Java robustes <br>
+                - Explorer les concepts avancés de Java <br>
+                <div class="image-wrapper">
+                    <img src="image/devjava.jpg" alt="Image encadrée" class="framed-image">
+                  </div>
+            
+            </ul>
+            </div>
+            <div id="skills" class="section">
+                
+                <ul><h2>Compétences techniques</h2> 
+                    <br>
+                    <li>Langages de programmation</li> <br>
+                <strong>Python 🐍 & Java ☕</strong> <br>
+                <br>
+               <li>Systémes d'éxploitation</li><br>
+                <strong>RockyLinux 🐧 KaliLinux</strong> <br>
+                <br>
+                <li>Superviseur réseaux</li> <br>
+                <strong>Wireshark 🐟 & Snort 🐽</strong><br>
+                <br>
+                <li>Résaux</li><br>
+                <strong>TCP /IP & HTTP/HTTPS & DNS 🌐</strong> <br>
+                <br>
+                <li>Virtualisation et technologies cloud </li>
+                <br>
+                <strong>Kubernetes 🚀</strong> <br>
+                <br>
+                <li>Sécurité</li> <br>
+                <strong>Cisco & GNS3</strong> <br>
+                <br>
+                <li>Cryptographie et sécurisation des données </li>
+                <br>
+                
+                <strong>PKI & chiffrement</strong>
+
+                </ul>
+                <ul><h2>Compétences Transverses</h2>
+                    <br>
+                    <li> <strong>Rédaction de rapports techniques et documentation.</strong></li>
+                    <br>
+                    <li><strong>Collaboration avec des équipes multidisciplinaires.</strong></li>
+                    <br>
+                    <li> <strong>Curiosité et proactivité dans l’apprentissage des nouvelles technologies.</strong></li>
+                    <br>
+                </ul>
+            </div>
+            <div id="experience" class="section">
+                <h2>Expériences Professionnelles</h2>
+               <ul><li><strong>Formatrice en Sécurité des systémes informatique</strong>  Jan 2025- ... </li> <br>
+                Ecole de formation  <br> 
+                <br>
+                <li><strong>Intégratrice Odoo</strong> Sept 2024- Jan 2025 </li> <br>
+                à L'incubateur Startup WE CAN SPACE <br> 
+                Alternante à l'entreprise Construb-Est de Béjaia
+                <br>
+                <br>
+                <li><strong>Consultante en formation Informatique</strong> Fev 2024- Sept 2024 </li> <br>
+                Freelance <br>
+                <br>
+                <li><strong>Créatrice de site WordPress</strong> Juin 2023- Fév 2024 </li> <br>
+                Freelance <br>
+                <br>
+                <li><strong>Enseignante Vacataire</strong> Sept 2022- Juil 2023 </li> <br>
+                Chargée TD: Logique Mathématique <br>
+                Chargée Tp: Systémes Sécurité , Technologies Internet <br>
+                <br>
+                <li><strong>Administratrice sécurité de systéme d'information</strong></li> <br>
+                Stagaire à Cevital (Entreprise Agro-Alimentaire ) <br>
+                <br>
+                <li><strong>Développeuse d'application DeskTop</strong></li> <br>
+                Stagaire à Direction des Impôts <br>
+            </ul>
+            </div>
+            <div id="projects" class="section">
+                <h2>Projets Réalisés</h2>
+                <ul>
+                    <li>
+                        <Strong>Création d'un Système de Détection d'Intrusion (IDS) avec Snort</Strong></li> <p>Ce projet à été réalisée pendant de mon self-learn de cours Cisco (Gestion des Cybermenaces) ou j'ai tenter de mettre en pratique mes acquis du formation: ce projet consistait à créer et configurer un Système de Détection d'Intrusion (IDS) avec Snort, un des IDS les plus populaires et efficaces. Ce projet permettra de surveiller le trafic réseau et de détecter des intrusions ou des comportements suspects en temps réel.</p>
+                    <li> <strong>Mise en place d'une solution de cartographie de parc 
+                        applicatif d'un systéme d'information</strong></li> <p>Dans le cadre de mon projet de fin d'études, j'ai conçu et déployé une solution de cartographie du parc applicatif pour un système d'information.Le but de ce projet est de créer une cartographie détaillée des applications et services utilisés dans un système d’information (SI). Cette cartographie permettra d'identifier les risques associés aux applications, de détecter les vulnérabilités et de faciliter la gestion de la sécurité du SI.
+                    </p> <br>
+                    <li><Strong>Mise en place d'un VPN site à site entre deux campus Distants</Strong></li> <br>
+                    <p>Ce projet avait pour objectif de sécuriser la communication entre deux réseaux géographiquement séparés (campus A et campus B) en établissant un VPN site-à-site. La solution mise en œuvre a permis de créer un tunnel sécurisé pour le transfert des données et d’assurer la confidentialité, l’intégrité et la disponibilité des informations échangées entre les deux sites.</p> <br>
+                    <li><Strong>Application de jeux vidéos nommé 'Play & Learn'</Strong></li> <br>
+                    <p>Projet de fin de Cycle Licence :Systémes Informatique. Le projet est une application desktop de jeux vidéo éducatifs, conçue pour offrir une expérience d'apprentissage interactive et ludique pour les enfants. L'objectif est de combiner des concepts pédagogiques avec des mécanismes de jeu pour stimuler l'apprentissage de manière amusante, tout en renforçant les compétences cognitives dans des domaines variés comme les mathématiques. <br> jeux éducatif: jeuc tetris , jeux tic tac toe , jeux de mémoire , jeux 2048,
+                        jeux de snake, jeux de logique.
+                    </p>
+                    <div class="image-container">
+                        
+                        
+                        
+                        <img src="image/inter.jpg" alt="Image 3" class="framed-image">
+                      </div>
+                </ul>
+            </div>
+            <div id="associative" class="section">
+                <h2>Expériences Associatives</h2>
+                <ul><li><strong>AISEC</strong></li> août 2020 - août 2021 <br>
+
+                    <em>Busines to Business Manager
+                        </em> <br>
+                        <br>
+                   Description: En tant que membre d'AIESEC, l'organisation mondiale dirigée par des jeunes, j'ai eu l'opportunité de contribuer à des initiatives internationales visant à promouvoir le leadership et l'engagement social. Pendant une année, j'ai participé à divers projets et activités qui m'ont permis de développer des compétences en gestion de projet, en travail d'équipe et en communication interculturelle. <br>
+                   <div class="image-container">
+                    <img src="image/AI1 (1).jpg" alt="Image 1" class="framed-image">
+                    
+                    <img src="image/AI1 (3).jpg" alt="Image 3" class="framed-image">
+                    <img src="image/AI1 (4).jpg" alt="Image 3" class="framed-image">
+                  </div>
+
+                <li><strong>Hult Prize</strong></li> sept. 2019 - sept. 2020 <br>
+                <em>Organisatrice d’événements & responsable marketing Digitale</em> <br>
+                <br>
+                Description :
+
+                En tant qu'organisatrice d'événements pour le Hult Prize, j'ai eu l'opportunité de coordonner plusieurs initiatives et événements liés à ce concours mondial de l'innovation sociale, qui met en lumière des projets d'entrepreneuriat ayant un impact social positif. Mon rôle a impliqué la gestion d'aspects clés de l'organisation d'événements, en travaillant avec une équipe dédiée pour promouvoir et exécuter des projets qui soutiennent l'engagement des étudiants envers l'entrepreneuriat social.En tant qu'organisatrice d'événements pour le Hult Prize, j'ai eu l'opportunité de coordonner plusieurs initiatives et événements liés à ce concours mondial de l'innovation sociale, qui met en lumière des projets d'entrepreneuriat ayant un impact social positif. Mon rôle a impliqué la gestion d'aspects clés de l'organisation d'événements, en travaillant avec une équipe dédiée pour promouvoir et exécuter des projets qui soutiennent l'engagement des étudiants envers l'entrepreneuriat social.
+                <div class="image-container">
+                        
+                        
+                        
+                    <img src="image/hult.jpg" alt="Image 3" class="framed-image">
+                  </div>
+            </ul>
+            </div>
+            <div id="languages" class="section">
+                <h2>Langues</h2>
+                <ul><li>Kabyle: Langue natale </li>
+                <li>Arabe: Lu ,écrit ,Parlé</li>
+            <li>Français: C1</li>
+        <li>Anglais: B2</li></ul>
+            </div>
+            <div id="Contacts" class="section">
+                <h2>Mes contacts</h2>
+                <p> <strong>Email </strong>  : <a href="liticiaadrar@gmain.com">liticiaadrar@gmail.com</a></p>
+                <p><strong>LinkedIn </strong> : <a href="www.linkedin.com/in/liticia-adrar-087693201">Mon profil linkedIn</a></p>
+            </div>
+            <div id="interests" class="section">
+                <h2>Centres d'Intérêts</h2>
+                <ul><li>Travail en équipe</li>
+                <li>le Sport </li>
+            <li>Cuisine</li>
+        <li>Lecture</li></ul>
+        <div class="image-container">
+            <img src="image/pi1 (1).jpg" alt="Image 1" class="framed-image">
+            
+            <img src="image/pi1 (2).jpg" alt="Image 3" class="framed-image">
+            <img src="image/pi1 (3).jpg" alt="Image 3" class="framed-image">
+          </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

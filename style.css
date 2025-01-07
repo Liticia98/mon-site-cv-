@@ -1,43 +1,108 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+.container {
+    display: flex;
+    width: 100%;
 }
 
-nav ul {
-    background: #444;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-main {
+.left {
+    background-color: #2c3e50;
+    color: white;
+    width: 30%;
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+.sticker {
+    font-size: 24px;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.photo img {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.image img {
+    width: 250px;
+    height: 150px;
+    border: 2px solid #2c3e50; /* Encadrement de l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : légère ombre */
+    object-fit: cover;
+
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+.framed-image {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .framed-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background: #34495e;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    background: #1abc9c;
+}
+
+.right {
+    background-color: #ecf0f1;
+    width: 70%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+h2 {
+    color: #2c3e50;
 }
